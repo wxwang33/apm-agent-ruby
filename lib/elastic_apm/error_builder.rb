@@ -10,7 +10,8 @@ module ElasticAPM
     # rubocop:disable Metrics/MethodLength, Metrics/AbcSize
     def build_exception(exception, handled: true)
       error = Error.new
-      error.exception = Error::Exception.new(exception, handled: handled)
+      error.exception =
+        Error::Exception.from_exception(exception, handled: handled)
 
       if exception.backtrace
         add_stacktrace error, :exception, exception.backtrace

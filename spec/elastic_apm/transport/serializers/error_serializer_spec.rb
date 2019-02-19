@@ -37,7 +37,7 @@ module ElasticAPM
                     user: nil
                   },
                   exception: {
-                    message: 'ZeroDivisionError: divided by 0',
+                    message: 'divided by 0',
                     type: 'ZeroDivisionError',
                     module: '',
                     code: nil,
