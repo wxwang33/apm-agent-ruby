@@ -19,7 +19,7 @@ module ElasticAPM
 
       server_url: 'http://localhost:8200',
 
-      active: true,
+      active: false,
       api_buffer_size: 256,
       api_request_size: '750kb',
       api_request_time: '10s',
